@@ -1,0 +1,30 @@
+2017-07-04 11:58:14,075 [Thread-5:12032] [django.server:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-04 11:58:14,334 [Thread-6:12588] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/css/app.9c181f55bc6ec753a215f11cab03b2bd.css HTTP/1.1" 304 0
+2017-07-04 11:58:14,394 [Thread-7:12536] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/manifest.b70c80f844b9e51f920f.js HTTP/1.1" 304 0
+2017-07-04 11:58:14,398 [Thread-8:4784] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/vendor.91677b15bdc423b945bd.js HTTP/1.1" 304 0
+2017-07-04 11:58:14,401 [Thread-10:9744] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/manifest.b70c80f844b9e51f920f.js.map HTTP/1.1" 304 0
+2017-07-04 11:58:14,401 [Thread-9:11396] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.6b198a007a9f65d5d997.js HTTP/1.1" 304 0
+2017-07-04 11:58:14,717 [Thread-11:11444] [sourceDns.webdns.views:18] [views:get_count] [ERROR]- Something went wrong!
+2017-07-04 11:58:14,717 [Thread-11:11444] [sourceDns.webdns.views:18] [views:get_count] [ERROR]- Something went wrong!
+2017-07-04 11:58:14,720 [Thread-11:11444] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-04 11:58:14,721 [Thread-11:11444] [django.db.backends:91] [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_article`.`id`) AS `id__count` FROM `blog_article`; args=()
+2017-07-04 11:58:14,723 [Thread-11:11444] [django.request:135] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /get_count/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django-1.11.2-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django-1.11.2-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\lib\site-packages\django-1.11.2-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\python\workplace\djangoBlog\blog\views.py", line 19, in get_count
+    results =   serializers.serialize('json',Article.objects.aggregate(Count('id')))
+  File "D:\python\lib\site-packages\django-1.11.2-py2.7.egg\django\core\serializers\__init__.py", line 129, in serialize
+    s.serialize(queryset, **options)
+  File "D:\python\lib\site-packages\django-1.11.2-py2.7.egg\django\core\serializers\base.py", line 84, in serialize
+    concrete_model = obj._meta.concrete_model
+AttributeError: 'unicode' object has no attribute '_meta'
+2017-07-04 11:58:14,772 [Thread-12:11948] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/vendor.91677b15bdc423b945bd.js.map HTTP/1.1" 304 0
+2017-07-04 11:58:14,780 [Thread-11:11444] [django.server:124] [basehttp:log_message] [ERROR]- "GET /get_count/ HTTP/1.1" 500 77599
+2017-07-04 11:58:14,805 [Thread-13:12064] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/js/app.6b198a007a9f65d5d997.js.map HTTP/1.1" 304 0
+2017-07-04 11:58:14,805 [Thread-14:11800] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/img/default.293a18d.jpg HTTP/1.1" 304 0
+2017-07-04 11:58:14,809 [Thread-15:13292] [django.server:124] [basehttp:log_message] [INFO]- "GET /static/img/bottom.c011254.jpg HTTP/1.1" 304 0

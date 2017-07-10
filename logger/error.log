@@ -1,0 +1,16 @@
+2017-07-04 12:00:29,349 [Thread-3:12112] [sourceDns.webdns.views:18] [views:get_count] [ERROR]- Something went wrong!
+2017-07-04 13:33:11,950 [Thread-8:16388] [sourceDns.webdns.views:18] [views:get_count] [ERROR]- Something went wrong!
+2017-07-04 13:48:15,667 [views:get_count] [ERROR]- {'average_price': 1}
+2017-07-06 17:00:11,262 [views:getArticleSpecific] [ERROR]- [<Tag: angular>, <Tag: vue>, <Tag: mobx>, <Tag: Python>]
+2017-07-06 17:00:53,657 [views:getArticleSpecific] [ERROR]- [<Tag: angular>, <Tag: vue>, <Tag: mobx>, <Tag: Python>]
+2017-07-06 17:01:51,930 [views:getArticleSpecific] [ERROR]- <type 'list'>
+2017-07-06 17:02:13,552 [views:getArticleSpecific] [ERROR]- <class 'blog.models.Tag'>
+2017-07-06 17:04:49,411 [views:getArticleSpecific] [ERROR]- <class 'blog.models.Tag'>
+2017-07-06 17:05:17,459 [views:getArticleSpecific] [ERROR]- <type 'list'>
+2017-07-06 17:05:27,792 [views:getArticleSpecific] [ERROR]- [<Tag: angular>]
+2017-07-06 17:05:50,059 [views:getArticleSpecific] [ERROR]- [{u'name': u'angular'}, {u'name': u'vue'}, {u'name': u'mobx'}, {u'name': u'Python'}]
+2017-07-06 17:06:29,858 [views:getArticleSpecific] [ERROR]- [(u'angular',), (u'vue',), (u'mobx',), (u'Python',)]
+2017-07-06 17:07:20,365 [views:getArticleSpecific] [ERROR]- [<Tag: angular>, <Tag: vue>, <Tag: mobx>, <Tag: Python>]
+2017-07-06 17:08:55,721 [views:getArticleSpecific] [ERROR]- [<Tag: angular>, <Tag: vue>, <Tag: mobx>, <Tag: Python>]
+2017-07-06 17:09:34,359 [views:getArticleSpecific] [ERROR]- [(1L, u'angular'), (2L, u'vue'), (4L, u'mobx'), (8L, u'Python')]
+2017-07-06 17:11:36,313 [views:getArticleSpecific] [ERROR]- [(u'angular',), (u'vue',), (u'mobx',), (u'Python',)]
