@@ -4,7 +4,7 @@ import TabnavigationStore from './TabnavigationStore'
 import ArchiveStore from './ArchiveStore'
 import RightboxStore from './RightboxStore'
 import CategoryStore from './CategoryStore'
-import TagsStore from './TagsStore'
+import TagStore from './TagStore'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -27,6 +27,6 @@ export default new Vuex.Store({
         ArchiveStore,
         RightboxStore,
         CategoryStore,
-        TagsStore
+        TagStore
     }
 })

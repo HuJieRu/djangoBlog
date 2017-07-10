@@ -2674,3 +2674,26 @@ Traceback (most recent call last):
   File "D:\python\lib\site-packages\django-1.11.2-py2.7.egg\django\db\models\fields\__init__.py", line 966, in get_prep_value
     return int(value)
 ValueError: invalid literal for int() with base 10: '{"name":"Archive","meta":{},"path":"/","hash":"","query":{},"params":{},"fullPath":"/","matched":[{"path":"","regex":{"keys":[]},"components":{"default":{"name":"archive","computed":{},"methods":{},"s'
+2017-07-10 10:50:40,384 [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-07-10 16:33:51,634 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /get_tags/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django-1.11.2-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django-1.11.2-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\lib\site-packages\django-1.11.2-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workplace\djangoBlog\blog\views.py", line 85, in getTags
+    results['tags']=[]
+NameError: global name 'results' is not defined
+2017-07-10 16:35:36,306 [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /get_tags/
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django-1.11.2-py2.7.egg\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "D:\python\lib\site-packages\django-1.11.2-py2.7.egg\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\python\lib\site-packages\django-1.11.2-py2.7.egg\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\workplace\djangoBlog\blog\views.py", line 85, in getTags
+    log(tags)
+NameError: global name 'log' is not defined

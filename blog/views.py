@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.shortcuts import render
+# from django.shortcuts import render
 from django.http import JsonResponse
 from blog.models import *
-from django.core import serializers
+# from django.core import serializers
 from django.db.models import Count
 from django.db.models.functions import ExtractMonth,ExtractYear,ExtractDay,TruncDate
 import logging
@@ -56,10 +56,10 @@ def getArticleSpecific(request):
     results={}
     # logger.info(Article.objects.values('id','title').get(id=request.GET['id']))
     #得到标签数组
-    temp=list(Article.objects.get(id=request.GET['id']).tag.values_list('name')  )
+    tags=list(Article.objects.get(id=request.GET['id']).tag.values_list('name')  )
     results['tags']=[]
     #处理标签数组的格式
-    for value in temp:
+    for value in tags:
         results['tags'].append(value[0])
     #得到文章详情
     data=Article.objects.annotate(date=TruncDate('create_time')).values('title','content','browse','date').get(id=request.GET['id'])
@@ -81,6 +81,8 @@ def getRightboxContent(request):
 
 #得到标签
 def getTags(request):
-    results=list(Tag.objects.all().values_list())
+    results={}
+    results['tags']=list(Tag.objects.all().values())
+    results['status_code']=102
     return JsonResponse(results, safe=False)
 

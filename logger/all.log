@@ -3646,3 +3646,584 @@
 2017-07-06 17:48:30,930 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
 2017-07-06 17:48:30,931 [utils:execute] [DEBUG]- (0.001) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
 2017-07-06 17:48:30,933 [basehttp:log_message] [INFO]- "GET /get_articleclassify/ HTTP/1.1" 200 220
+2017-07-10 10:49:46,907 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 10:49:46,907 [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2017-07-10 10:49:46,977 [utils:execute] [DEBUG]- (0.026) SHOW FULL TABLES; args=None
+2017-07-10 10:49:47,000 [utils:execute] [DEBUG]- (0.020) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-07-10 10:50:38,513 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 10:50:39,250 [basehttp:log_message] [INFO]- "GET /static/js/manifest.9ace2be04db6b92cae61.js HTTP/1.1" 200 1511
+2017-07-10 10:50:39,252 [basehttp:log_message] [INFO]- "GET /static/js/app.912e8eddf1e602627c94.js HTTP/1.1" 200 21417
+2017-07-10 10:50:39,272 [basehttp:log_message] [INFO]- "GET /static/css/app.b3fe0e3a473e80b76106ce16a22eab42.css HTTP/1.1" 200 181437
+2017-07-10 10:50:39,272 [basehttp:log_message] [INFO]- "GET /static/js/vendor.f0269123cb8a8c13e502.js HTTP/1.1" 200 210505
+2017-07-10 10:50:39,351 [basehttp:log_message] [INFO]- "GET /get_count HTTP/1.1" 301 0
+2017-07-10 10:50:39,665 [basehttp:log_message] [INFO]- "GET /get_rightbox_content HTTP/1.1" 301 0
+2017-07-10 10:50:39,670 [basehttp:log_message] [INFO]- "GET /static/img/default.293a18d.jpg HTTP/1.1" 200 10305
+2017-07-10 10:50:39,676 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 10:50:39,690 [utils:execute] [DEBUG]- (0.015) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 10:50:39,719 [utils:execute] [DEBUG]- (0.026) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 10:50:39,734 [utils:execute] [DEBUG]- (0.014) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 10:50:39,736 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 10:50:39,750 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 10:50:39,752 [utils:execute] [DEBUG]- (0.001) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 10:50:39,753 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 10:50:40,016 [basehttp:log_message] [INFO]- "GET /static/img/bottom.c011254.jpg HTTP/1.1" 200 45977
+2017-07-10 10:50:40,368 [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\django-1.11.2-py2.7.egg\django\template\base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-07-10 10:50:40,385 [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 3070
+2017-07-10 10:50:41,934 [basehttp:log_message] [INFO]- "GET /get_articles HTTP/1.1" 301 0
+2017-07-10 10:50:42,229 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 10:50:42,230 [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-07-10 10:50:42,236 [utils:execute] [DEBUG]- (0.001) SELECT EXTRACT(YEAR FROM `blog_article`.`create_time`) AS `year`, EXTRACT(MONTH FROM `blog_article`.`create_time`) AS `month`, COUNT(EXTRACT(MONTH FROM `blog_article`.`create_time`)) AS `count` FROM `blog_article` WHERE `blog_article`.`status` = 0 GROUP BY EXTRACT(YEAR FROM `blog_article`.`create_time`), EXTRACT(MONTH FROM `blog_article`.`create_time`) ORDER BY `year` DESC, `month` DESC; args=(0,)
+2017-07-10 10:50:42,237 [utils:execute] [DEBUG]- (0.001) SELECT EXTRACT(YEAR FROM `blog_article`.`create_time`) AS `year`, EXTRACT(MONTH FROM `blog_article`.`create_time`) AS `month` FROM `blog_article` WHERE `blog_article`.`status` = 0; args=(0,)
+2017-07-10 10:50:42,240 [basehttp:log_message] [INFO]- "GET /get_articles/ HTTP/1.1" 200 165
+2017-07-10 13:55:53,641 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 13:55:53,776 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 13:55:53,776 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 13:55:53,776 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 13:55:53,778 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 13:55:53,779 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 13:55:53,779 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 13:55:53,779 [utils:execute] [DEBUG]- (0.003) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 13:55:53,779 [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-07-10 13:55:53,782 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 13:55:53,783 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 13:55:53,788 [utils:execute] [DEBUG]- (0.001) SELECT EXTRACT(YEAR FROM `blog_article`.`create_time`) AS `year`, EXTRACT(MONTH FROM `blog_article`.`create_time`) AS `month`, COUNT(EXTRACT(MONTH FROM `blog_article`.`create_time`)) AS `count` FROM `blog_article` WHERE `blog_article`.`status` = 0 GROUP BY EXTRACT(YEAR FROM `blog_article`.`create_time`), EXTRACT(MONTH FROM `blog_article`.`create_time`) ORDER BY `year` DESC, `month` DESC; args=(0,)
+2017-07-10 13:55:53,789 [utils:execute] [DEBUG]- (0.000) SELECT EXTRACT(YEAR FROM `blog_article`.`create_time`) AS `year`, EXTRACT(MONTH FROM `blog_article`.`create_time`) AS `month` FROM `blog_article` WHERE `blog_article`.`status` = 0; args=(0,)
+2017-07-10 13:55:53,789 [basehttp:log_message] [INFO]- "GET /get_articles/ HTTP/1.1" 200 165
+2017-07-10 14:41:51,970 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 14:41:51,970 [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2017-07-10 14:41:52,019 [utils:execute] [DEBUG]- (0.000) SHOW FULL TABLES; args=None
+2017-07-10 14:41:52,023 [utils:execute] [DEBUG]- (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-07-10 15:03:30,378 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 15:03:30,378 [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-07-10 15:03:30,424 [utils:execute] [DEBUG]- (0.000) SHOW FULL TABLES; args=None
+2017-07-10 15:03:30,427 [utils:execute] [DEBUG]- (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-07-10 16:10:59,206 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:10:59,207 [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-07-10 16:10:59,272 [utils:execute] [DEBUG]- (0.001) SHOW FULL TABLES; args=None
+2017-07-10 16:10:59,276 [utils:execute] [DEBUG]- (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-07-10 16:11:39,778 [basehttp:log_message] [INFO]- "GET /get_articles_for_date?year=2017&month=8 HTTP/1.1" 301 0
+2017-07-10 16:11:40,023 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:11:40,023 [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2017-07-10 16:11:40,028 [utils:execute] [DEBUG]- (0.001) SELECT `blog_article`.`id`, `blog_article`.`title`, EXTRACT(DAY FROM `blog_article`.`create_time`) AS `day` FROM `blog_article` WHERE (`blog_article`.`status` = 0 AND `blog_article`.`create_time` LIKE BINARY '2017-08%'); args=(0, u'2017-08%')
+2017-07-10 16:11:40,029 [basehttp:log_message] [INFO]- "GET /get_articles_for_date/?year=2017&month=8 HTTP/1.1" 200 77
+2017-07-10 16:11:41,240 [basehttp:log_message] [INFO]- "GET /get_articles_for_date?year=2017&month=7 HTTP/1.1" 301 0
+2017-07-10 16:11:41,562 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:11:41,565 [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-07-10 16:11:41,571 [utils:execute] [DEBUG]- (0.000) SELECT `blog_article`.`id`, `blog_article`.`title`, EXTRACT(DAY FROM `blog_article`.`create_time`) AS `day` FROM `blog_article` WHERE (`blog_article`.`status` = 0 AND `blog_article`.`create_time` LIKE BINARY '2017-07%'); args=(0, u'2017-07%')
+2017-07-10 16:11:41,572 [basehttp:log_message] [INFO]- "GET /get_articles_for_date/?year=2017&month=7 HTTP/1.1" 200 152
+2017-07-10 16:11:42,440 [basehttp:log_message] [INFO]- "GET /get_articles_for_date?year=2015&month=7 HTTP/1.1" 301 0
+2017-07-10 16:11:42,756 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:11:42,757 [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-07-10 16:11:42,766 [utils:execute] [DEBUG]- (0.001) SELECT `blog_article`.`id`, `blog_article`.`title`, EXTRACT(DAY FROM `blog_article`.`create_time`) AS `day` FROM `blog_article` WHERE (`blog_article`.`status` = 0 AND `blog_article`.`create_time` LIKE BINARY '2015-07%'); args=(0, u'2015-07%')
+2017-07-10 16:11:42,767 [basehttp:log_message] [INFO]- "GET /get_articles_for_date/?year=2015&month=7 HTTP/1.1" 200 77
+2017-07-10 16:11:44,378 [basehttp:log_message] [INFO]- "GET /get_article_specific?id=1 HTTP/1.1" 301 0
+2017-07-10 16:11:44,717 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:11:44,717 [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2017-07-10 16:11:44,723 [utils:execute] [DEBUG]- (0.000) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`author_id`, `blog_article`.`classify_id`, `blog_article`.`browse`, `blog_article`.`status`, `blog_article`.`update_time`, `blog_article`.`create_time` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2017-07-10 16:11:44,724 [utils:execute] [DEBUG]- (0.000) SELECT `blog_tag`.`name` FROM `blog_tag` INNER JOIN `blog_article_tag` ON (`blog_tag`.`id` = `blog_article_tag`.`tag_id`) WHERE `blog_article_tag`.`article_id` = 1; args=(1,)
+2017-07-10 16:11:44,727 [utils:execute] [DEBUG]- (0.001) SELECT `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`browse`, DATE(`blog_article`.`create_time`) AS `date` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2017-07-10 16:11:44,729 [basehttp:log_message] [INFO]- "GET /get_article_specific/?id=1 HTTP/1.1" 200 1624
+2017-07-10 16:11:55,519 [basehttp:log_message] [INFO]- "GET /get_article_specific?id=3 HTTP/1.1" 301 0
+2017-07-10 16:11:55,532 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:11:55,533 [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-07-10 16:11:55,539 [utils:execute] [DEBUG]- (0.000) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`author_id`, `blog_article`.`classify_id`, `blog_article`.`browse`, `blog_article`.`status`, `blog_article`.`update_time`, `blog_article`.`create_time` FROM `blog_article` WHERE `blog_article`.`id` = 3; args=(3,)
+2017-07-10 16:11:55,540 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`name` FROM `blog_tag` INNER JOIN `blog_article_tag` ON (`blog_tag`.`id` = `blog_article_tag`.`tag_id`) WHERE `blog_article_tag`.`article_id` = 3; args=(3,)
+2017-07-10 16:11:55,542 [utils:execute] [DEBUG]- (0.000) SELECT `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`browse`, DATE(`blog_article`.`create_time`) AS `date` FROM `blog_article` WHERE `blog_article`.`id` = 3; args=(3,)
+2017-07-10 16:11:55,545 [basehttp:log_message] [INFO]- "GET /get_article_specific/?id=3 HTTP/1.1" 200 175
+2017-07-10 16:11:58,272 [basehttp:log_message] [INFO]- "GET /get_article_specific?id=4 HTTP/1.1" 301 0
+2017-07-10 16:11:58,282 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:11:58,282 [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2017-07-10 16:11:58,288 [utils:execute] [DEBUG]- (0.001) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`author_id`, `blog_article`.`classify_id`, `blog_article`.`browse`, `blog_article`.`status`, `blog_article`.`update_time`, `blog_article`.`create_time` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2017-07-10 16:11:58,289 [utils:execute] [DEBUG]- (0.000) SELECT `blog_tag`.`name` FROM `blog_tag` INNER JOIN `blog_article_tag` ON (`blog_tag`.`id` = `blog_article_tag`.`tag_id`) WHERE `blog_article_tag`.`article_id` = 4; args=(4,)
+2017-07-10 16:11:58,292 [utils:execute] [DEBUG]- (0.000) SELECT `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`browse`, DATE(`blog_article`.`create_time`) AS `date` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2017-07-10 16:11:58,293 [basehttp:log_message] [INFO]- "GET /get_article_specific/?id=4 HTTP/1.1" 200 125
+2017-07-10 16:12:01,680 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:12:01,681 [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-07-10 16:12:01,688 [utils:execute] [DEBUG]- (0.001) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`author_id`, `blog_article`.`classify_id`, `blog_article`.`browse`, `blog_article`.`status`, `blog_article`.`update_time`, `blog_article`.`create_time` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2017-07-10 16:12:01,691 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`name` FROM `blog_tag` INNER JOIN `blog_article_tag` ON (`blog_tag`.`id` = `blog_article_tag`.`tag_id`) WHERE `blog_article_tag`.`article_id` = 1; args=(1,)
+2017-07-10 16:12:01,694 [utils:execute] [DEBUG]- (0.001) SELECT `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`browse`, DATE(`blog_article`.`create_time`) AS `date` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2017-07-10 16:12:01,696 [basehttp:log_message] [INFO]- "GET /get_article_specific/?id=1 HTTP/1.1" 200 1624
+2017-07-10 16:19:55,072 [basehttp:log_message] [INFO]- "GET /get_tags HTTP/1.1" 301 0
+2017-07-10 16:19:55,326 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:19:55,328 [utils:execute] [DEBUG]- (0.000) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 16:19:55,329 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 115
+2017-07-10 16:19:56,559 [basehttp:log_message] [INFO]- "GET /get_articleclassify HTTP/1.1" 301 0
+2017-07-10 16:19:56,881 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:19:56,882 [utils:execute] [DEBUG]- (0.001) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 16:19:56,884 [basehttp:log_message] [INFO]- "GET /get_articleclassify/ HTTP/1.1" 200 220
+2017-07-10 16:20:58,450 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:20:58,450 [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-07-10 16:20:58,457 [utils:execute] [DEBUG]- (0.001) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`author_id`, `blog_article`.`classify_id`, `blog_article`.`browse`, `blog_article`.`status`, `blog_article`.`update_time`, `blog_article`.`create_time` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2017-07-10 16:20:58,460 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`name` FROM `blog_tag` INNER JOIN `blog_article_tag` ON (`blog_tag`.`id` = `blog_article_tag`.`tag_id`) WHERE `blog_article_tag`.`article_id` = 1; args=(1,)
+2017-07-10 16:20:58,463 [utils:execute] [DEBUG]- (0.001) SELECT `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`browse`, DATE(`blog_article`.`create_time`) AS `date` FROM `blog_article` WHERE `blog_article`.`id` = 1; args=(1,)
+2017-07-10 16:20:58,463 [basehttp:log_message] [INFO]- "GET /get_article_specific/?id=1 HTTP/1.1" 200 1624
+2017-07-10 16:21:10,180 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:21:10,181 [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-07-10 16:21:10,188 [utils:execute] [DEBUG]- (0.001) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`author_id`, `blog_article`.`classify_id`, `blog_article`.`browse`, `blog_article`.`status`, `blog_article`.`update_time`, `blog_article`.`create_time` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2017-07-10 16:21:10,190 [utils:execute] [DEBUG]- (0.000) SELECT `blog_tag`.`name` FROM `blog_tag` INNER JOIN `blog_article_tag` ON (`blog_tag`.`id` = `blog_article_tag`.`tag_id`) WHERE `blog_article_tag`.`article_id` = 4; args=(4,)
+2017-07-10 16:21:10,193 [utils:execute] [DEBUG]- (0.000) SELECT `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`browse`, DATE(`blog_article`.`create_time`) AS `date` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2017-07-10 16:21:10,194 [basehttp:log_message] [INFO]- "GET /get_article_specific/?id=4 HTTP/1.1" 200 125
+2017-07-10 16:21:18,661 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:21:18,663 [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2017-07-10 16:21:18,665 [utils:execute] [DEBUG]- (0.001) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`author_id`, `blog_article`.`classify_id`, `blog_article`.`browse`, `blog_article`.`status`, `blog_article`.`update_time`, `blog_article`.`create_time` FROM `blog_article` WHERE `blog_article`.`id` = 3; args=(3,)
+2017-07-10 16:21:18,667 [utils:execute] [DEBUG]- (0.000) SELECT `blog_tag`.`name` FROM `blog_tag` INNER JOIN `blog_article_tag` ON (`blog_tag`.`id` = `blog_article_tag`.`tag_id`) WHERE `blog_article_tag`.`article_id` = 3; args=(3,)
+2017-07-10 16:21:18,667 [utils:execute] [DEBUG]- (0.000) SELECT `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`browse`, DATE(`blog_article`.`create_time`) AS `date` FROM `blog_article` WHERE `blog_article`.`id` = 3; args=(3,)
+2017-07-10 16:21:18,668 [basehttp:log_message] [INFO]- "GET /get_article_specific/?id=3 HTTP/1.1" 200 175
+2017-07-10 16:21:24,579 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:21:24,582 [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2017-07-10 16:21:24,588 [utils:execute] [DEBUG]- (0.001) SELECT `blog_article`.`id`, `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`author_id`, `blog_article`.`classify_id`, `blog_article`.`browse`, `blog_article`.`status`, `blog_article`.`update_time`, `blog_article`.`create_time` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2017-07-10 16:21:24,592 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`name` FROM `blog_tag` INNER JOIN `blog_article_tag` ON (`blog_tag`.`id` = `blog_article_tag`.`tag_id`) WHERE `blog_article_tag`.`article_id` = 4; args=(4,)
+2017-07-10 16:21:24,595 [utils:execute] [DEBUG]- (0.001) SELECT `blog_article`.`title`, `blog_article`.`content`, `blog_article`.`browse`, DATE(`blog_article`.`create_time`) AS `date` FROM `blog_article` WHERE `blog_article`.`id` = 4; args=(4,)
+2017-07-10 16:21:24,598 [basehttp:log_message] [INFO]- "GET /get_article_specific/?id=4 HTTP/1.1" 200 125
+2017-07-10 16:32:10,437 [basehttp:log_message] [INFO]- "GET /static/js/manifest.9ace2be04db6b92cae61.js.map HTTP/1.1" 200 14601
+2017-07-10 16:32:10,447 [basehttp:log_message] [INFO]- "GET /static/js/app.912e8eddf1e602627c94.js.map HTTP/1.1" 200 134098
+2017-07-10 16:32:10,494 [basehttp:log_message] [INFO]- "GET /static/js/vendor.f0269123cb8a8c13e502.js.map HTTP/1.1" 200 1544812
+2017-07-10 16:32:16,220 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 16:32:16,690 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:32:16,693 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 16:32:16,696 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 16:32:16,697 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 16:32:16,700 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 16:32:16,726 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:32:16,726 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:32:16,729 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 16:32:16,729 [utils:execute] [DEBUG]- (0.001) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 16:32:16,730 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 115
+2017-07-10 16:32:16,730 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 16:33:45,005 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:33:45,006 [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-07-10 16:33:45,053 [utils:execute] [DEBUG]- (0.001) SHOW FULL TABLES; args=None
+2017-07-10 16:33:45,056 [utils:execute] [DEBUG]- (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-07-10 16:33:51,151 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 16:33:51,395 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:33:51,397 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 16:33:51,398 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 16:33:51,398 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 16:33:51,398 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 16:33:51,632 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:33:51,632 [utils:execute] [DEBUG]- (0.000) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 16:33:51,635 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:33:51,637 [utils:execute] [DEBUG]- (0.001) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 16:33:51,637 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 16:33:52,082 [basehttp:log_message] [ERROR]- "GET /get_tags/ HTTP/1.1" 500 72786
+2017-07-10 16:34:16,938 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:34:16,940 [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2017-07-10 16:34:16,989 [utils:execute] [DEBUG]- (0.001) SHOW FULL TABLES; args=None
+2017-07-10 16:34:16,992 [utils:execute] [DEBUG]- (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-07-10 16:34:18,344 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 16:34:18,644 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:34:18,644 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 16:34:18,645 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 16:34:18,647 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 16:34:18,648 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 16:34:18,917 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:34:18,917 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:34:18,917 [utils:execute] [DEBUG]- (0.000) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 16:34:18,917 [utils:execute] [DEBUG]- (0.000) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 16:34:18,918 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 16:34:18,920 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 54
+2017-07-10 16:35:21,907 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:35:21,907 [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2017-07-10 16:35:21,950 [utils:execute] [DEBUG]- (0.001) SHOW FULL TABLES; args=None
+2017-07-10 16:35:21,953 [utils:execute] [DEBUG]- (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-07-10 16:35:22,859 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 16:35:23,128 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:35:23,131 [utils:execute] [DEBUG]- (0.003) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 16:35:23,132 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 16:35:23,134 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 16:35:23,137 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 16:35:23,371 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:35:23,378 [utils:execute] [DEBUG]- (0.006) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 16:35:23,378 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 54
+2017-07-10 16:35:23,408 [utils:execute] [DEBUG]- (0.004) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:35:23,410 [utils:execute] [DEBUG]- (0.001) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 16:35:23,411 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 16:35:34,448 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:35:34,448 [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2017-07-10 16:35:34,500 [utils:execute] [DEBUG]- (0.001) SHOW FULL TABLES; args=None
+2017-07-10 16:35:34,506 [utils:execute] [DEBUG]- (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-07-10 16:35:35,644 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 16:35:35,953 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:35:35,954 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 16:35:35,959 [utils:execute] [DEBUG]- (0.003) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 16:35:35,960 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 16:35:35,963 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 16:35:36,303 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:35:36,305 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:35:36,305 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 16:35:36,315 [utils:execute] [DEBUG]- (0.010) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 16:35:36,319 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 16:35:36,546 [basehttp:log_message] [ERROR]- "GET /get_tags/ HTTP/1.1" 500 72899
+2017-07-10 16:35:51,390 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:35:51,392 [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2017-07-10 16:35:51,467 [utils:execute] [DEBUG]- (0.001) SHOW FULL TABLES; args=None
+2017-07-10 16:35:51,470 [utils:execute] [DEBUG]- (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-07-10 16:35:52,438 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 16:35:52,721 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:35:52,723 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 16:35:52,723 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 16:35:52,724 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 16:35:52,726 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 16:35:52,976 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:35:52,977 [utils:execute] [DEBUG]- (0.000) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 16:35:52,977 [views:getTags] [ERROR]- [(1L, u'angular'), (2L, u'vue'), (3L, u'react'), (4L, u'mobx'), (5L, u'jquery'), (6L, u'boostrap'), (7L, u'HTML'), (8L, u'Python')]
+2017-07-10 16:35:52,980 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 54
+2017-07-10 16:35:52,983 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:35:52,984 [utils:execute] [DEBUG]- (0.000) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 16:35:52,986 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 16:36:18,819 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:36:18,819 [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-07-10 16:36:18,881 [utils:execute] [DEBUG]- (0.001) SHOW FULL TABLES; args=None
+2017-07-10 16:36:18,884 [utils:execute] [DEBUG]- (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-07-10 16:36:20,884 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 16:36:21,134 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:36:21,135 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 16:36:21,138 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 16:36:21,138 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 16:36:21,140 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 16:36:21,387 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:36:21,388 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 16:36:21,388 [views:getTags] [ERROR]- [(1L, u'angular'), (2L, u'vue'), (3L, u'react'), (4L, u'mobx'), (5L, u'jquery'), (6L, u'boostrap'), (7L, u'HTML'), (8L, u'Python')]
+2017-07-10 16:36:21,388 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 54
+2017-07-10 16:36:21,405 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:36:21,407 [utils:execute] [DEBUG]- (0.001) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 16:36:21,407 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 16:36:30,542 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 16:36:31,084 [utils:execute] [DEBUG]- (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:36:31,085 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 16:36:31,088 [utils:execute] [DEBUG]- (0.002) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 16:36:31,089 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 16:36:31,092 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 16:36:31,094 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:36:31,095 [utils:execute] [DEBUG]- (0.000) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 16:36:31,095 [views:getTags] [ERROR]- [(1L, u'angular'), (2L, u'vue'), (3L, u'react'), (4L, u'mobx'), (5L, u'jquery'), (6L, u'boostrap'), (7L, u'HTML'), (8L, u'Python')]
+2017-07-10 16:36:31,096 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 54
+2017-07-10 16:36:31,101 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:36:31,102 [utils:execute] [DEBUG]- (0.001) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 16:36:31,102 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 16:37:48,270 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:37:48,272 [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2017-07-10 16:37:48,316 [utils:execute] [DEBUG]- (0.001) SHOW FULL TABLES; args=None
+2017-07-10 16:37:48,321 [utils:execute] [DEBUG]- (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-07-10 16:37:48,664 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 16:37:48,911 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:37:48,913 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 16:37:48,913 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 16:37:48,914 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 16:37:48,914 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 16:37:49,150 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:37:49,151 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:37:49,151 [utils:execute] [DEBUG]- (0.000) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 16:37:49,151 [views:getTags] [ERROR]- [(1L, u'angular'), (2L, u'vue'), (3L, u'react'), (4L, u'mobx'), (5L, u'jquery'), (6L, u'boostrap'), (7L, u'HTML'), (8L, u'Python')]
+2017-07-10 16:37:49,151 [utils:execute] [DEBUG]- (0.001) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 16:37:49,153 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 145
+2017-07-10 16:37:49,153 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 16:38:11,581 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:38:11,582 [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-07-10 16:38:11,628 [utils:execute] [DEBUG]- (0.001) SHOW FULL TABLES; args=None
+2017-07-10 16:38:11,631 [utils:execute] [DEBUG]- (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-07-10 16:38:12,375 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 16:38:12,615 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:38:12,617 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 16:38:12,617 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 16:38:12,618 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 16:38:12,618 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 16:38:12,851 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:38:12,851 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:38:12,851 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 16:38:12,852 [utils:execute] [DEBUG]- (0.002) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 16:38:12,854 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 16:38:12,855 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 16:38:12,855 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 16:38:38,111 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 16:38:38,112 [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2017-07-10 16:38:38,160 [utils:execute] [DEBUG]- (0.000) SHOW FULL TABLES; args=None
+2017-07-10 16:38:38,163 [utils:execute] [DEBUG]- (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-07-10 17:15:24,453 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:15:25,105 [basehttp:log_message] [INFO]- "GET /static/js/manifest.3add62dcb84b89d19c6c.js HTTP/1.1" 200 1511
+2017-07-10 17:15:25,121 [basehttp:log_message] [INFO]- "GET /static/js/app.e4ebab575ce7d5acb6ed.js HTTP/1.1" 200 21397
+2017-07-10 17:15:25,125 [basehttp:log_message] [INFO]- "GET /static/js/manifest.3add62dcb84b89d19c6c.js.map HTTP/1.1" 200 14601
+2017-07-10 17:15:25,584 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:15:25,586 [utils:execute] [DEBUG]- (0.003) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:15:25,588 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:15:25,591 [basehttp:log_message] [INFO]- "GET /static/js/app.e4ebab575ce7d5acb6ed.js.map HTTP/1.1" 200 135266
+2017-07-10 17:15:25,592 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:15:25,594 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:15:25,595 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:15:25,598 [utils:execute] [DEBUG]- (0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:15:25,598 [utils:execute] [DEBUG]- (0.003) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:15:25,599 [utils:execute] [DEBUG]- (0.002) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:15:25,601 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:15:25,605 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:15:25,607 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:15:30,263 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:15:30,736 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:15:30,739 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:15:30,744 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:15:30,752 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:15:30,753 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:15:30,755 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:15:30,756 [utils:execute] [DEBUG]- (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:15:30,759 [utils:execute] [DEBUG]- (0.002) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:15:30,760 [utils:execute] [DEBUG]- (0.001) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:15:30,762 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:15:30,766 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:15:30,766 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:15:33,296 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:15:33,789 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:15:33,793 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:15:33,796 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:15:33,799 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:15:33,799 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:15:33,809 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:15:33,811 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:15:33,811 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:15:33,812 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:15:33,812 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:15:33,813 [utils:execute] [DEBUG]- (0.001) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:15:33,815 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:15:36,128 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:15:36,460 [basehttp:log_message] [INFO]- "GET /static/js/manifest.3add62dcb84b89d19c6c.js HTTP/1.1" 304 0
+2017-07-10 17:15:36,473 [basehttp:log_message] [INFO]- "GET /static/js/app.e4ebab575ce7d5acb6ed.js HTTP/1.1" 304 0
+2017-07-10 17:15:36,703 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:15:36,703 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:15:36,704 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:15:36,706 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:15:36,706 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:15:36,802 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:15:36,803 [utils:execute] [DEBUG]- (0.000) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:15:36,803 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:15:36,805 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:15:36,917 [basehttp:log_message] [INFO]- "GET /static/js/manifest.3add62dcb84b89d19c6c.js.map HTTP/1.1" 304 0
+2017-07-10 17:15:36,921 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:15:36,921 [basehttp:log_message] [INFO]- "GET /static/js/app.e4ebab575ce7d5acb6ed.js.map HTTP/1.1" 304 0
+2017-07-10 17:15:36,927 [utils:execute] [DEBUG]- (0.004) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:15:36,930 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:17:40,977 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:17:41,227 [basehttp:log_message] [INFO]- "GET /static/js/manifest.984cba2d7cc782db9678.js HTTP/1.1" 200 1511
+2017-07-10 17:17:41,312 [basehttp:log_message] [INFO]- "GET /static/js/app.6f82a88edeefeb4bf0c8.js HTTP/1.1" 200 21339
+2017-07-10 17:17:41,315 [basehttp:log_message] [INFO]- "GET /static/js/manifest.984cba2d7cc782db9678.js.map HTTP/1.1" 200 14601
+2017-07-10 17:17:41,572 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:17:41,572 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:17:41,575 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:17:41,578 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:17:41,581 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:17:41,721 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:17:41,726 [utils:execute] [DEBUG]- (0.003) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:17:41,730 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:17:41,732 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:17:41,739 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:17:41,744 [basehttp:log_message] [INFO]- "GET /static/js/app.6f82a88edeefeb4bf0c8.js.map HTTP/1.1" 200 135064
+2017-07-10 17:17:41,750 [utils:execute] [DEBUG]- (0.016) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:17:41,752 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:18:36,141 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:18:36,388 [basehttp:log_message] [INFO]- "GET /static/js/manifest.35411dd5a5680d3d32c4.js HTTP/1.1" 200 1511
+2017-07-10 17:18:36,464 [basehttp:log_message] [INFO]- "GET /static/js/app.04dd4f3d91cbbae17ad2.js HTTP/1.1" 200 21319
+2017-07-10 17:18:36,467 [basehttp:log_message] [INFO]- "GET /static/js/manifest.35411dd5a5680d3d32c4.js.map HTTP/1.1" 200 14601
+2017-07-10 17:18:36,720 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:18:36,720 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:18:36,720 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:18:36,721 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:18:36,723 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:18:36,905 [basehttp:log_message] [INFO]- "GET /static/js/app.04dd4f3d91cbbae17ad2.js.map HTTP/1.1" 200 135027
+2017-07-10 17:18:36,911 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:18:36,913 [utils:execute] [DEBUG]- (0.001) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:18:36,914 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:18:36,918 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:18:36,920 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:18:36,920 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:18:36,921 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:18:39,118 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:18:39,450 [basehttp:log_message] [INFO]- "GET /static/js/app.04dd4f3d91cbbae17ad2.js HTTP/1.1" 304 0
+2017-07-10 17:18:39,453 [basehttp:log_message] [INFO]- "GET /static/js/manifest.35411dd5a5680d3d32c4.js HTTP/1.1" 304 0
+2017-07-10 17:18:39,700 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:18:39,701 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:18:39,703 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:18:39,704 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:18:39,707 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:18:39,790 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:18:39,792 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:18:39,793 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:18:39,796 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:18:39,917 [basehttp:log_message] [INFO]- "GET /static/js/manifest.35411dd5a5680d3d32c4.js.map HTTP/1.1" 304 0
+2017-07-10 17:18:39,920 [basehttp:log_message] [INFO]- "GET /static/js/app.04dd4f3d91cbbae17ad2.js.map HTTP/1.1" 304 0
+2017-07-10 17:18:39,926 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:18:39,927 [utils:execute] [DEBUG]- (0.000) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:18:39,928 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:18:41,138 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:18:41,473 [basehttp:log_message] [INFO]- "GET /static/js/app.04dd4f3d91cbbae17ad2.js HTTP/1.1" 304 0
+2017-07-10 17:18:41,474 [basehttp:log_message] [INFO]- "GET /static/js/manifest.35411dd5a5680d3d32c4.js HTTP/1.1" 304 0
+2017-07-10 17:18:41,710 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:18:41,711 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:18:41,713 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:18:41,713 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:18:41,713 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:18:41,910 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:18:41,911 [utils:execute] [DEBUG]- (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:18:41,917 [basehttp:log_message] [INFO]- "GET /static/js/manifest.35411dd5a5680d3d32c4.js.map HTTP/1.1" 304 0
+2017-07-10 17:18:41,918 [basehttp:log_message] [INFO]- "GET /static/js/app.04dd4f3d91cbbae17ad2.js.map HTTP/1.1" 304 0
+2017-07-10 17:18:41,923 [utils:execute] [DEBUG]- (0.005) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:18:41,927 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:18:41,928 [utils:execute] [DEBUG]- (0.011) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:18:41,930 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:18:41,931 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:19:41,974 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:19:42,221 [basehttp:log_message] [INFO]- "GET /static/js/manifest.35411dd5a5680d3d32c4.js HTTP/1.1" 304 0
+2017-07-10 17:19:42,301 [basehttp:log_message] [INFO]- "GET /static/js/app.04dd4f3d91cbbae17ad2.js HTTP/1.1" 304 0
+2017-07-10 17:19:42,305 [basehttp:log_message] [INFO]- "GET /static/js/manifest.35411dd5a5680d3d32c4.js.map HTTP/1.1" 304 0
+2017-07-10 17:19:42,546 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:19:42,548 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:19:42,549 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:19:42,552 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:19:42,555 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:19:42,700 [basehttp:log_message] [INFO]- "GET /static/js/app.04dd4f3d91cbbae17ad2.js.map HTTP/1.1" 304 0
+2017-07-10 17:19:42,700 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:19:42,703 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:19:42,704 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:19:42,709 [utils:execute] [DEBUG]- (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:19:42,710 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:19:42,713 [utils:execute] [DEBUG]- (0.003) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:19:42,713 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:19:45,224 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:19:45,697 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:19:45,700 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:19:45,701 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:19:45,704 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:19:45,707 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:19:45,724 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:19:45,724 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:19:45,726 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:19:45,727 [utils:execute] [DEBUG]- (0.002) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:19:45,727 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:19:45,730 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:19:45,730 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:20:42,888 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:20:43,131 [basehttp:log_message] [INFO]- "GET /static/js/manifest.35411dd5a5680d3d32c4.js HTTP/1.1" 304 0
+2017-07-10 17:20:43,230 [basehttp:log_message] [INFO]- "GET /static/js/app.04dd4f3d91cbbae17ad2.js HTTP/1.1" 304 0
+2017-07-10 17:20:43,233 [basehttp:log_message] [INFO]- "GET /static/js/manifest.35411dd5a5680d3d32c4.js.map HTTP/1.1" 304 0
+2017-07-10 17:20:43,473 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:20:43,473 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:20:43,476 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:20:43,477 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:20:43,480 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:20:43,651 [basehttp:log_message] [INFO]- "GET /static/js/app.04dd4f3d91cbbae17ad2.js.map HTTP/1.1" 304 0
+2017-07-10 17:20:43,671 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:20:43,671 [utils:execute] [DEBUG]- (0.000) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:20:43,673 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:20:43,674 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:20:43,674 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:20:43,677 [utils:execute] [DEBUG]- (0.002) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:20:43,677 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:24:42,875 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:24:43,117 [basehttp:log_message] [INFO]- "GET /static/js/manifest.6b6cdf649d82f5a9f4f8.js HTTP/1.1" 200 1511
+2017-07-10 17:24:43,201 [basehttp:log_message] [INFO]- "GET /static/js/manifest.6b6cdf649d82f5a9f4f8.js.map HTTP/1.1" 200 14601
+2017-07-10 17:24:43,203 [basehttp:log_message] [INFO]- "GET /static/js/app.848b1e3e58294542b950.js HTTP/1.1" 200 21313
+2017-07-10 17:24:43,451 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:24:43,453 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:24:43,456 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:24:43,459 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:24:43,460 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:24:43,605 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:24:43,608 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:24:43,609 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:24:43,612 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:24:43,612 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:24:43,615 [utils:execute] [DEBUG]- (0.001) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:24:43,617 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:24:43,631 [basehttp:log_message] [INFO]- "GET /static/js/app.848b1e3e58294542b950.js.map HTTP/1.1" 200 135285
+2017-07-10 17:24:56,155 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:24:56,405 [basehttp:log_message] [INFO]- "GET /static/js/manifest.6b6cdf649d82f5a9f4f8.js HTTP/1.1" 304 0
+2017-07-10 17:24:56,482 [basehttp:log_message] [INFO]- "GET /static/js/app.848b1e3e58294542b950.js HTTP/1.1" 304 0
+2017-07-10 17:24:56,486 [basehttp:log_message] [INFO]- "GET /static/js/manifest.6b6cdf649d82f5a9f4f8.js.map HTTP/1.1" 304 0
+2017-07-10 17:24:56,753 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:24:56,756 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:24:56,757 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:24:56,759 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:24:56,760 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:24:56,884 [basehttp:log_message] [INFO]- "GET /static/js/app.848b1e3e58294542b950.js.map HTTP/1.1" 304 0
+2017-07-10 17:24:56,894 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:24:56,894 [utils:execute] [DEBUG]- (0.000) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:24:56,895 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:24:56,897 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:24:56,898 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:24:56,898 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:24:56,900 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:25:51,724 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:25:51,977 [basehttp:log_message] [INFO]- "GET /static/js/manifest.b14973927a47e73c58ad.js HTTP/1.1" 200 1511
+2017-07-10 17:25:52,063 [basehttp:log_message] [INFO]- "GET /static/js/app.1f779dcacafe8533a45c.js HTTP/1.1" 200 21313
+2017-07-10 17:25:52,075 [basehttp:log_message] [INFO]- "GET /static/js/manifest.b14973927a47e73c58ad.js.map HTTP/1.1" 200 14601
+2017-07-10 17:25:52,354 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:25:52,355 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:25:52,358 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:25:52,371 [utils:execute] [DEBUG]- (0.012) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:25:52,374 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:25:52,526 [basehttp:log_message] [INFO]- "GET /static/js/app.1f779dcacafe8533a45c.js.map HTTP/1.1" 200 135285
+2017-07-10 17:25:52,529 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:25:52,530 [utils:execute] [DEBUG]- (0.000) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:25:52,532 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:25:52,535 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:25:52,536 [utils:execute] [DEBUG]- (0.001) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:25:52,538 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:25:52,539 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:27:16,181 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:27:16,428 [basehttp:log_message] [INFO]- "GET /static/js/manifest.2ef83f6f5f708834ab77.js HTTP/1.1" 200 1511
+2017-07-10 17:27:16,510 [basehttp:log_message] [INFO]- "GET /static/js/app.df793882814af6b83b02.js HTTP/1.1" 200 21313
+2017-07-10 17:27:16,513 [basehttp:log_message] [INFO]- "GET /static/js/manifest.2ef83f6f5f708834ab77.js.map HTTP/1.1" 200 14601
+2017-07-10 17:27:16,763 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:27:16,766 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:27:16,767 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:27:16,769 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:27:16,770 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:27:16,917 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:27:16,917 [utils:execute] [DEBUG]- (0.000) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:27:16,918 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:27:16,920 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:27:16,927 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:27:16,934 [utils:execute] [DEBUG]- (0.001) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:27:16,937 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:27:16,941 [basehttp:log_message] [INFO]- "GET /static/js/app.df793882814af6b83b02.js.map HTTP/1.1" 200 135285
+2017-07-10 17:27:19,232 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:27:19,572 [basehttp:log_message] [INFO]- "GET /static/js/manifest.2ef83f6f5f708834ab77.js HTTP/1.1" 304 0
+2017-07-10 17:27:19,572 [basehttp:log_message] [INFO]- "GET /static/js/app.df793882814af6b83b02.js HTTP/1.1" 304 0
+2017-07-10 17:27:19,813 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:27:19,813 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:27:19,815 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:27:19,816 [utils:execute] [DEBUG]- (0.001) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:27:19,818 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:27:19,918 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:27:19,920 [utils:execute] [DEBUG]- (0.000) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:27:19,920 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:27:19,921 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:27:20,038 [basehttp:log_message] [INFO]- "GET /static/js/manifest.2ef83f6f5f708834ab77.js.map HTTP/1.1" 304 0
+2017-07-10 17:27:20,040 [basehttp:log_message] [INFO]- "GET /static/js/app.df793882814af6b83b02.js.map HTTP/1.1" 304 0
+2017-07-10 17:27:20,052 [utils:execute] [DEBUG]- (0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:27:20,056 [utils:execute] [DEBUG]- (0.002) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:27:20,059 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:28:16,901 [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 445
+2017-07-10 17:28:17,151 [basehttp:log_message] [INFO]- "GET /static/js/manifest.608e84830a52cc2dbc56.js HTTP/1.1" 200 1511
+2017-07-10 17:28:17,233 [basehttp:log_message] [INFO]- "GET /static/js/app.4e4a4fdbcb434f6f4a3b.js HTTP/1.1" 200 21313
+2017-07-10 17:28:17,239 [basehttp:log_message] [INFO]- "GET /static/js/manifest.608e84830a52cc2dbc56.js.map HTTP/1.1" 200 14601
+2017-07-10 17:28:17,490 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:28:17,493 [utils:execute] [DEBUG]- (0.003) SELECT COUNT(`blog_article`.`id`) AS `article` FROM `blog_article`; args=()
+2017-07-10 17:28:17,494 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_tag`.`id`) AS `tag` FROM `blog_tag`; args=()
+2017-07-10 17:28:17,496 [utils:execute] [DEBUG]- (0.000) SELECT COUNT(`blog_articleclassify`.`id`) AS `articleClassify` FROM `blog_articleclassify`; args=()
+2017-07-10 17:28:17,499 [basehttp:log_message] [INFO]- "GET /get_count/ HTTP/1.1" 200 67
+2017-07-10 17:28:17,693 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:28:17,697 [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:28:17,697 [utils:execute] [DEBUG]- (0.002) SELECT `blog_tag`.`id`, `blog_tag`.`name` FROM `blog_tag`; args=()
+2017-07-10 17:28:17,700 [utils:execute] [DEBUG]- (0.001) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:28:17,700 [views:getTags] [ERROR]- [{u'id': 1L, 'name': u'angular'}, {u'id': 2L, 'name': u'vue'}, {u'id': 3L, 'name': u'react'}, {u'id': 4L, 'name': u'mobx'}, {u'id': 5L, 'name': u'jquery'}, {u'id': 6L, 'name': u'boostrap'}, {u'id': 7L, 'name': u'HTML'}, {u'id': 8L, 'name': u'Python'}]
+2017-07-10 17:28:17,703 [basehttp:log_message] [INFO]- "GET /static/js/app.4e4a4fdbcb434f6f4a3b.js.map HTTP/1.1" 200 135285
+2017-07-10 17:28:17,706 [basehttp:log_message] [INFO]- "GET /get_rightbox_content/ HTTP/1.1" 200 220
+2017-07-10 17:28:17,710 [basehttp:log_message] [INFO]- "GET /get_tags/ HTTP/1.1" 200 257
+2017-07-10 17:29:08,339 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:29:08,341 [utils:execute] [DEBUG]- (0.000) SELECT `blog_articleclassify`.`id`, `blog_articleclassify`.`name`, `blog_articleclassify`.`parent_id` FROM `blog_articleclassify`; args=()
+2017-07-10 17:29:08,342 [basehttp:log_message] [INFO]- "GET /get_articleclassify/ HTTP/1.1" 200 220
+2017-07-10 17:29:37,035 [utils:execute] [DEBUG]- (0.000) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-10 17:29:37,036 [utils:execute] [DEBUG]- (0.000) SELECT VERSION(); args=None
+2017-07-10 17:29:37,082 [utils:execute] [DEBUG]- (0.000) SHOW FULL TABLES; args=None
+2017-07-10 17:29:37,085 [utils:execute] [DEBUG]- (0.001) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()

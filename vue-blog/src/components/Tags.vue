@@ -3,9 +3,9 @@
     <div class="borderStyle container">
         <h1 class="title">tags</h1>
         <div class="content">
-        <p ><strong>Mayer</strong>目前共有标签：30个</p>
+        <p ><strong>Mayer</strong>目前共有标签：{{tags.length}}个</p>
         <div class='tags'>
-            <a v-for="item in items" class="item" :key="item.id" :style="item.size" >{{item.name}}</a>
+            <a v-for="item in tags" class="item" :key="item.id" :style="item.size" >{{item.name}}</a>
         </div>
         </div>
     </div>
@@ -19,17 +19,16 @@ export default {
 
   data () {
     return {
-        items :[{id:1, name:'12306',size:{fontSize:'14px'}},
-         {id:2, name:'Apache',size:{fontSize:'14px'}},
-         {id:3, name:'MySQL',size:{fontSize:'18px'}},
-         {id:4, name:'Linux',size:{fontSize:'14px'}},
-         {id:5, name:'PHP',size:{fontSize:'20px'}},
-         {id:6, name:'SEO',size:{fontSize:'14px'}}]
+        // items :[{id:1, name:'12306',size:{fontSize:'14px'}},
+        //  {id:2, name:'Apache',size:{fontSize:'14px'}},
+        //  {id:3, name:'MySQL',size:{fontSize:'18px'}},
+        //  {id:4, name:'Linux',size:{fontSize:'14px'}},
+        //  {id:5, name:'PHP',size:{fontSize:'20px'}},
+        //  {id:6, name:'SEO',size:{fontSize:'14px'}}]
     }
   }, computed: {
     ...mapState({
-      
-    
+      tags:state=>state.TagStore.tags  
     })
   },
   methods:{
